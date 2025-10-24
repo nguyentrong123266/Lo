@@ -2076,7 +2076,7 @@
 			Title = "Disord"
 		}),
 		Server = Window:AddTab({
-			Title = "server page and status "
+			Title = "Sever And Status Page "
 		}),
 		Main = Window:AddTab({
 			Title = "Farm page"
@@ -2085,7 +2085,7 @@
 			Title = "Cài đặt Farm"
 		}),
 		Melee = Window:AddTab({
-			Title = "Tự động lấy Võ V2"
+			Title = "Auto Item"
 		}),
 		Quests = Window:AddTab({
 			Title = "Nhiệm vụ - Vật phẩm"
@@ -2097,10 +2097,10 @@
 			Title = "Mirage + Race V4"
 		}),
 		Drago = Window:AddTab({
-			Title = "Đảo Drago Dojo"
+			Title = "Drago Dojo"
 		}),
 		Prehistoric = Window:AddTab({
-			Title = "Tiền sử"
+			Title = "Prehistoric"
 		}),
 		fishing = Window:AddTab({
 			Title = "Fishing"
@@ -2112,13 +2112,13 @@
 			Title = "PVP"
 		}),
 		Travel = Window:AddTab({
-			Title = "Dịch chuyển"
+			Title = "Travel"
 		}),
 		Shop = Window:AddTab({
-			Title = "Cửa hàng"
+			Title = "Shop"
 		}),
 		Misc = Window:AddTab({
-			Title = "Khác"
+			Title = "Misc"
 		})
 	}
 
@@ -11570,11 +11570,12 @@ end)
 			end)
 		end)
 	end)
-	local Q = Tabs.Fishing:AddToggle("fishing", {
-    Title = "fishing",
-    Description = "",
-    Default = false
-})
+	end
+		local Fishing = Tabs.Main:AddToggle("Fishing", { 
+		Title = "Auto Fishing",
+		Description = "",
+		Default = false
+	})
 Q:OnChanged(function(Value)
     _G.Fishing= Value
 end)
