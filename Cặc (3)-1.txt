@@ -2003,8 +2003,8 @@
 
 	local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 	local Window = Fluent:CreateWindow({
-		Title = "AndepZai [ Premium ]",
-		SubTitle = "  by Maru Premium",
+		Title = "Script Blox Fruit |",
+		SubTitle = " By TrongNguyen",
 		TabWidth = 160,
 		Theme = "Dark",
 		Acrylic = false,
@@ -2076,10 +2076,10 @@
 			Title = "Disord"
 		}),
 		Server = Window:AddTab({
-			Title = "Server"
+			Title = "server page and status "
 		}),
 		Main = Window:AddTab({
-			Title = "Farm"
+			Title = "Farm page"
 		}),
 		Settings = Window:AddTab({
 			Title = "Cài đặt Farm"
@@ -2091,10 +2091,10 @@
 			Title = "Nhiệm vụ - Vật phẩm"
 		}),
 		SeaEvent = Window:AddTab({
-			Title = "Sự kiện Biển"
+			Title = "Event"
 		}),
 		Mirage = Window:AddTab({
-			Title = "Đảo Mirage + Chủng tộc V4"
+			Title = "Mirage + Race V4"
 		}),
 		Drago = Window:AddTab({
 			Title = "Đảo Drago Dojo"
@@ -2103,13 +2103,13 @@
 			Title = "Tiền sử"
 		}),
 		fishing = Window:AddTab({
-			Title = "fishing"
+			Title = "Fishing"
 		}),
 		Raids = Window:AddTab({
-			Title = "Đột kích"
+			Title = "Raid"
 		}),
 		Combat = Window:AddTab({
-			Title = "Chiến đấu PVP"
+			Title = "PVP"
 		}),
 		Travel = Window:AddTab({
 			Title = "Dịch chuyển"
@@ -2123,7 +2123,7 @@
 	}
 
 	Tabs.Discord:AddButton({
-		Title = "Link Join Sever Discord",
+		Title = "TrongNguyen Hub Discord",
 		Description = "Đây nha anh em ( Copy rồi dán vào trình duyệt )",
 		Callback = function()
 			setclipboard(tostring("https://discord.gg/s8R9b5NfsU"))
@@ -2132,7 +2132,7 @@
 	local ReplicatedStorage = game:GetService("ReplicatedStorage")
 	local Players = game:GetService("Players")
 	if World3 then
-		Tabs.Main:AddSection("AndepZai")
+		Tabs.Main:AddSection("Farm")
 		local TeleportToggle = Tabs.Main:AddToggle("tpSubmarineWorker", {
 			Title = "Bay đến NPC Farm Level Trên 2600",
 			Description = "Teleport to Submarine Worker (Level >= 2600, World 3 only)",
@@ -11570,7 +11570,7 @@ end)
 			end)
 		end)
 	end)
-	Window:SelectTab(11)
+	Window:SelectTab(1)
 	local ReplicatedStorage = game:GetService("ReplicatedStorage")
 	local Players = game:GetService("Players")
 	if World3 then
