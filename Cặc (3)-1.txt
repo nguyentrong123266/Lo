@@ -11570,17 +11570,11 @@ end)
 			end)
 		end)
 	end)
-	Window:SelectTab(1)
-	local ReplicatedStorage = game:GetService("ReplicatedStorage")
-	local Players = game:GetService("Players")
-	if World3 then
-		Tabs.Main:AddSection("fishing")
-	local Chest = Tabs.Main:AddToggle("fishing", {
-		Title = "fishing",
-		Description = "",
-		Default = false
-	})
-	
+	local Q = Tabs.Fishing:AddToggle("fishing", {
+    Title = "fishing",
+    Description = "",
+    Default = false
+})
 Q:OnChanged(function(Value)
     _G.Fishing= Value
 end)
